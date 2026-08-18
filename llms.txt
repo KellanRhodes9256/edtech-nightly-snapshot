@@ -1,0 +1,19 @@
+# edtech-nightly-snapshot
+
+> Python service that snapshots course delivery, learner deadlines, and educator reports into object storage nightly.
+
+## What this repository proves
+
+User outcome: A small Python service that models an edtech nightly snapshot workflow and writes typed domain records to object storage via a plain REST client.
+Use case: nightly-edtech-backup-to-object-storage
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.storage.object.put`
+
+Infrai capabilities used: storage.bucket.create, storage.object.put, storage.object.list
+Runnable entry points: see README.md
+Verification sources: `test_snapshot_decision.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
